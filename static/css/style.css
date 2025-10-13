@@ -1,0 +1,93 @@
+#index-welcome {
+    background-image: url(../images/anasayfa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 911px;
+}
+
+.index-title {
+    font-size: 120px;
+    font-weight: 500;
+    color: #c99223;
+}
+
+.index-paragraph {
+    font-size: 30px;
+    color: #43453a;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Crimson Text', sans-serif;
+}
+
+body, p {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    color: #c99223;
+    translate: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
+    color: #2b2c25;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;                 
+    width: 0;                 
+    background-color: #c99223;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    transform: scale(1.05);
+    color: #2b2c25;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #c99223;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: #43453a;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    color: #43453a;
+}
+
+.navbar-brand::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;                 
+    width: 0;                 
+    background-color: #c99223;
+    transition: width 0.4s ease;
+}
+
+.navbar-brand:hover::after {
+    transform: scale(1.05);
+    color: #2b2c25;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #c99223;
+    transition: all 0.3s ease;
+}
