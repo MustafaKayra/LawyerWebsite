@@ -107,6 +107,7 @@ body {
 
 .welcome-paragraph {
     color: #fff;
+    font-size: 20px;
 }
 
 .services-title {
@@ -116,6 +117,7 @@ body {
 
 .services-paragraph {
     color: #fff;
+    font-size: 20px;
 }
 
 .servicescard {
@@ -148,3 +150,106 @@ body {
     box-shadow: 0 0 10px #2A5298;
 }
 
+.services-span {
+    color: #ff7b00;
+}
+
+.whyus-icon {
+    color: #ff7b00;
+    font-size: 60px;
+}
+
+#whyus-container {
+    background-color: #20201b;
+}
+
+.whyus-span {
+    color: #ff7b00;
+    font-size: 60px;
+}
+
+.whyus-image {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ff7b00;
+}
+
+#whyus-item1 {
+    box-shadow: 0 0 10px #ff7b00;
+    background: linear-gradient(45deg, #20201b, #3c3d34);
+    border-radius: 20px;
+    width: 700px;
+}
+
+#whyus-item2 {
+    box-shadow: 0 0 10px #1E3C72;
+    background: linear-gradient(45deg, #8f5b18, #5a380c);
+    border-radius: 20px;
+    width: 700px;
+}
+
+#whyus-item3 {
+    box-shadow: 0 0 10px #fff;
+    background: linear-gradient(45deg, #2A5298, #1E3C72);
+    border-radius: 20px;
+    width: 700px;
+}
+
+.workspace-item {
+    box-shadow: 0 0 20px #fff;
+    background: linear-gradient(45deg, #20201b, #3c3d34);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s ease;
+}
+
+.workspace-item:hover {
+    box-shadow: 0 0 20px #ff7b00;
+    background: linear-gradient(45deg, #20201b, #3c3d34);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    transform: scale(1.05);
+}
+
+.workspace-icon {
+    font-size: 60px;
+    color: #ff7b00;
+}
+
+.workspace-title {
+    color: #fff;
+    font-size: 40px;
+}
+
+.workspaceprevious-button, .workspacenext-button {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid #ff7b00;
+    transition: all 0.3s ease;
+}
+
+.workspaceprevious-button:hover, .workspacenext-button:hover {
+    border: 1px solid #2A5298;
+    transform: scale(1.05);
+}
+
+@keyframes translateanimation {
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aftertranslateanimation {
+    100% {
+        transform: translateX(2000px);
+    }
+}
+
+@keyframes beforetranslateanimation {
+    100% {
+        transform: translateX(-2000px);
+    }
+}
