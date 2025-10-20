@@ -253,3 +253,60 @@ body {
         transform: translateX(-2000px);
     }
 }
+
+.person-item {
+    box-shadow: 0 0 20px #ff7b00;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    max-width: 300px;
+    background: linear-gradient(45deg, #080807, #121310, #2b2c25);
+}
+
+.person-item:hover {
+    box-shadow: 0 0 20px #fff;
+    transform: scale(1.05);
+}
+
+.person-name {
+    color: #fff;
+    font-size: 40px;
+}
+
+.person-degree {
+    color: #2A5298;
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 30px;
+}
+
+.person-image {
+    border-radius: 20px;
+}
+
+.person-email {
+    color: #ff7b00;
+    font-size: 17px;
+}
+
+.commenter-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #ff7b00;
+}
+
+.commenter-name {
+    color: #ff7b00;
+    font-size: 30px;
+}
+
+.comment-content {
+    color: #fff;
+}
+
+.comment-item {
+    background: linear-gradient(45deg, #121310, #20201b);
+    box-shadow: 0 0 10px #ff7b00;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+}
