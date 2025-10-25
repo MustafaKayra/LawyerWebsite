@@ -478,3 +478,124 @@ body {
         transform: scale(1.00);
     }
 }
+
+.contact-input {
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2d67cc;
+    background: linear-gradient(90deg, #121310, #2b2c25);
+    color: #9e9e9e;
+    transition: all 0.3s ease;
+}
+
+.contact-input:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #fff;
+}
+
+.contact-input::placeholder {
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff7b00;
+    background-color: #20201b;
+    color: #fff;
+}
+
+.contact-map {
+    border-radius: 20px;
+    border: 2px solid #ff7b00;
+    box-shadow: 0 0 10px #ff7b00;
+}
+
+.contact-button {
+    background-color: #ff7b00;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}
+
+.contact-icon {
+    color: #ff7b00;
+    font-size: 30px;
+}
+
+.contact-paragraph {
+    color: #fff;
+    font-size: 25px;
+}
+
+.footer-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ff7b00;
+}
+
+.footer-paragraph {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Crimson Text', sans-serif;
+}
+
+#footer-container {
+    background-color: #20201b;
+}
+
+.footer-h3 {
+    color: #ff7b00;
+    font-size: 30px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    display: inline !important;
+}
+
+.footer-link:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.footer-link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;                 
+    width: 0;                 
+    background-color: #ff7b00;
+    transition: width 0.4s ease;
+}
+
+.footer-link:hover::after {
+    transform: scale(1.05);
+    color: #2b2c25;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #ff7b00;
+    transition: all 0.3s ease;
+}
+
+.footer-icon {
+    font-size: 30px;
+    color: #ff7b00;
+}
+
+.footer-contact {
+    color: #fff;
+    font-size: 25px;
+}
