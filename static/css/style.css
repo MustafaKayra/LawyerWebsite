@@ -310,3 +310,171 @@ body {
     width: 500px;
     height: 350px;
 }
+
+.blog-item {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(247, 246, 246, 0.3);
+    width: 700px;
+    height: 400px;
+}
+
+.blog-title {
+    font-family: 'Crimson Text', sans-serif;
+    color: #ff7b00;
+    font-size: 35px;
+    z-index: 10;
+}
+
+.blog-paragraph {
+    color: #fff;
+    font-size: 15px;
+    z-index: 10;
+}
+
+#blog1 {
+    background-image: url("../images/Avukat-Nedir.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+#blog1:hover {
+    background-image: url("../images/avukat-.jpg");
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff7b00;
+    cursor: pointer;
+}
+
+#blog2 {
+    background-image: url("../images/bakirköy-avukat.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+#blog2:hover {
+    background-image: url("../images/bakirköy-.jpg");
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff7b00;
+    cursor: pointer;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';                    /* 1. Boş içerik */
+    position: absolute;             /* 2. Serbest konumlandır */
+    left: 50%;                      /* 3. Soldan %50 */
+    transform: translateX(-50%);    /* 4. Tam ortala */
+    width: 4px;                     /* 5. Çizgi kalınlığı */
+    height: 100%;                   /* 6. Tüm yükseklik */
+    background: rgba(255, 255, 255, 0.3);  /* 7. Renk */
+    border-radius: 2px;             /* 8. Yuvarlak köşe */
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;      /* Sağa yasla */
+    margin-right: -5px;     /* Ortadaki çizgiden 80px uzak */
+}
+
+/* 3. ÇİFT SAYILAR (2, 4, 6...) */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: -5px;      /* Ortadaki çizgiden 80px uzak */
+    margin-right: auto;     /* Sağ taraf otomatik (aslında gerek yok) */
+}
+
+.timeline-title {
+    color: #ff7b00;
+}
+
+.timeline-paragraph {
+    color: #fff;
+}
+
+.timeline-content {
+    background: #3c3d34;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #2A5298;
+    position: relative;
+    width: calc(50% - 40px);
+    transition: all 0.3s ease;
+}
+
+.timeline-marker {
+    border: 1px solid #ff7b00;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7b00;
+    position: absolute;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 50%;                      /* 3. Soldan %50 */
+    transform: translateX(-50%);
+}
+
+.ffa-card {
+    box-shadow: 0 0 10px #fff;
+    background: linear-gradient(45deg, #2b2c25, #121310);
+    border-radius: 10px;
+    width: 600px;
+    transition: all 0.3s ease;
+    border: none !important;
+}
+
+.ffa-title {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+}
+
+.ffa-icon {
+    color: #ff7b00;
+    font-size: 40px;
+}
+
+.ffa-card:hover, .ffa-card.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ff7b00;
+    cursor: pointer;
+}
+
+.ffa-content {
+    box-shadow: 0 0 10px #ff7b00;
+    border-radius: 20px;
+    height: 100%;
+    background: linear-gradient(45deg, #2b2c25, #121310);
+    transition: all 0.3s ease;
+}
+
+.ffa-content-title {
+    color: #ff7b00;
+    font-size: 60px;
+}
+
+.ffa-content-paragraph {
+    color: #fff;
+    font-size: 25px;
+}
+
+@keyframes ffacontentanimation {
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.00);
+    }
+}
