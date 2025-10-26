@@ -19,6 +19,29 @@
     font-family: 'Crimson Text', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .index-title {
+        font-size: 60px;
+        font-weight: 600;
+        color: #ff7b00;
+    }
+
+    .index-paragraph {
+        font-size: 40px;
+        color: #fff;
+        font-weight: 500;
+        font-family: 'Crimson Text', sans-serif;
+    }
+
+    #index-welcome {
+        background-image: url(../images/avukatlara-hediye-ne-alinir.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 811px;
+    }
+}
+
 h1, h2, h3, h4 {
     font-family: 'Crimson Text', sans-serif;
 }
@@ -115,6 +138,34 @@ body {
     color: #ff7b00;
 }
 
+@media (max-width: 768px) {
+    .welcome-title {
+        color: #ff7b00;
+        font-size: 50px;
+    }
+
+.welcome-paragraph {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .services-title {
+        font-size: 40px;
+        color: #ff7b00;
+        text-align: center;
+    }
+
+    .services-paragraph {
+        color: #fff;
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    .whoarewe-image {
+        height: 250px;
+    }
+}
+
 .services-paragraph {
     color: #fff;
     font-size: 20px;
@@ -143,6 +194,13 @@ body {
 .cardparagraph {
     font-size: 15px;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .cardparagraph {
+        font-size: 12px;
+        color: #fff;
+    }
 }
 
 .whoarewe-image {
@@ -194,6 +252,59 @@ body {
     width: 700px;
 }
 
+.whyus-spantext {
+    color: #fff;
+    font-size: 40px;
+}
+
+.whyus-icon1 {
+    color: #ff7b00;
+    font-size: 60px;
+}
+
+.whyus-span1 {
+    color: #ff7b00;
+    font-size: 60px;
+} 
+
+@media (max-width: 768px) {
+    #whyus-item1 {
+        box-shadow: 0 0 10px #ff7b00;
+        background: linear-gradient(45deg, #20201b, #3c3d34);
+        border-radius: 20px;
+        width: 340px;
+    }
+
+    #whyus-item2 {
+        box-shadow: 0 0 10px #1E3C72;
+        background: linear-gradient(45deg, #8f5b18, #5a380c);
+        border-radius: 20px;
+        width: 340px;
+    }
+
+    #whyus-item3 {
+        box-shadow: 0 0 10px #fff;
+        background: linear-gradient(45deg, #2A5298, #1E3C72);
+        border-radius: 20px;
+        width: 340px;
+    }
+
+    .whyus-icon {
+        color: #ff7b00;
+        font-size: 30px;
+    }
+
+    .whyus-span {
+        color: #ff7b00;
+        font-size: 30px;
+    }
+
+    .whyus-spantext {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
 .workspace-item {
     box-shadow: 0 0 20px #fff;
     background: linear-gradient(45deg, #20201b, #3c3d34);
@@ -229,6 +340,17 @@ body {
     background: none;
     border: 1px solid #ff7b00;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .workspaceprevious-button, .workspacenext-button {
+        border-radius: 50%;
+        width: 80px;
+        height: 70px;
+        background: none;
+        border: 1px solid #ff7b00;
+        transition: all 0.3s ease;
+    }
 }
 
 .workspaceprevious-button:hover, .workspacenext-button:hover {
@@ -408,6 +530,59 @@ body {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .timeline-content {
+        background: #3c3d34;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px #2A5298;
+        position: relative;
+        width: calc(50% - 20px);
+        transition: all 0.3s ease;
+    }
+
+    .timeline-title {
+        color: #ff7b00;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .timeline-paragraph {
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .timeline-marker {
+        border: 1px solid #ff7b00;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 50%;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff7b00;
+        position: absolute;
+        max-width: 800px;
+        margin: 0 auto;
+        left: 50%;                      /* 3. Soldan %50 */
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+    margin-left: auto;      /* Sağa yasla */
+    margin-right: -5px;     /* Ortadaki çizgiden 80px uzak */
+}
+
+/* 3. ÇİFT SAYILAR (2, 4, 6...) */
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: -5px;      /* Ortadaki çizgiden 80px uzak */
+    margin-right: auto;     /* Sağ taraf otomatik (aslında gerek yok) */
+}
+}
+
 .timeline-marker {
     border: 1px solid #ff7b00;
     color: #fff;
@@ -433,6 +608,7 @@ body {
     width: 600px;
     transition: all 0.3s ease;
     border: none !important;
+    text-decoration: none !important;
 }
 
 .ffa-title {
@@ -468,6 +644,54 @@ body {
 .ffa-content-paragraph {
     color: #fff;
     font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .ffa-card {
+        box-shadow: 0 0 10px #fff;
+        background: linear-gradient(45deg, #2b2c25, #121310);
+        border-radius: 10px;
+        width: 300px;
+        transition: all 0.3s ease;
+        border: none !important;
+        text-decoration: none !important;
+    }
+
+    .ffa-title {
+        color: #fff;
+        font-size: 12px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .ffa-icon {
+        color: #ff7b00;
+        font-size: 20px;
+    }
+
+    .ffa-card:hover, .ffa-card.active {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #ff7b00;
+        cursor: pointer;
+
+    }
+
+    .ffa-content {
+        box-shadow: 0 0 10px #ff7b00;
+        border-radius: 20px;
+        height: 100%;
+        background: linear-gradient(45deg, #2b2c25, #121310);
+        transition: all 0.3s ease;
+    }
+
+    .ffa-content-title {
+        color: #ff7b00;
+        font-size: 40px;
+    }
+
+    .ffa-content-paragraph {
+        color: #fff;
+        font-size: 20px;
+    }
 }
 
 @keyframes ffacontentanimation {

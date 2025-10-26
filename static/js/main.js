@@ -114,22 +114,27 @@ if (ffaCard) {
             ffaContent.style.animation = "none"
             void ffaContent.offsetWidth // Reflow'u zorla (tarayıcının DOM'u yeniden hesaplamasını sağla)
             if (card.id == "ffa1") {
+                ffaContent.id = "ffa1-content"
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "Avukat tutmak ne kadara mal olur?"
                 ffaContentText.textContent = "Avukatlık ücretleri, davanın türüne, karmaşıklığına ve süresine göre değişiklik gösterir. İlk görüşmemizde, davanızın detaylarını dinledikten sonra size şeffaf bir ücretlendirme planı sunuyoruz. Hem maktu ücret hem de başarı primi ile çalışma seçeneklerimiz mevcuttur. Detaylı bilgi için bizimle iletişime geçebilirsiniz."
             } else if (card.id == "ffa2") {
+                ffaContent.id = "ffa2-content"
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "İlk görüşme ücretsiz mi?"
                 ffaContentText.textContent = "Evet, ilk danışma görüşmemiz ücretsizdir. Bu görüşmede davanızı değerlendirir, hukuki haklarınızı açıklar ve size en uygun çözüm yollarını sunarız. Randevu almak için telefon veya e-posta ile bizimle iletişime geçebilirsiniz."
             }  else if (card.id == "ffa3") {
+                ffaContent.id = "ffa3-content"
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "Davam ne kadar sürer?"
                 ffaContentText.textContent = "Davaların süresi, davanın türüne, mahkemenin iş yüküne ve davanın karmaşıklığına göre değişir. Örneğin basit bir alacak davası 6-12 ay sürebilirken, karmaşık ticari davalar birkaç yıl sürebilir. Size davanızın tahmini süresi hakkında ilk görüşmede detaylı bilgi veririz."
             }  else if (card.id == "ffa4") {
+                ffaContent.id = "ffa4-content"
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "Online görüşme yapabiliyor musunuz?"
                 ffaContentText.textContent = "Evet, online görüşme imkanımız mevcuttur. Özellikle farklı şehirlerde yaşayan müvekkillerimiz için video konferans yoluyla danışmanlık hizmeti sunuyoruz. Ancak bazı durumlarda imza gerektiren işlemler için yüz yüze görüşme gerekebilir."
             }  else if (card.id == "ffa5") {
+                ffaContent.id = "ffa5-content"
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "Hangi konularda hizmet veriyorsunuz?"
                 ffaContentText.textContent = "Aile hukuku, iş hukuku, ceza hukuku, ticaret hukuku, gayrimenkul hukuku, miras hukuku, tüketici hukuku, sigorta hukuku ve daha birçok alanda hizmet vermekteyiz. Detaylı uzmanlık alanlarımızı Çalışma Alanlarımız bölümünden inceleyebilirsiniz. Alanımız dışında kalan konularda size yönlendirme yapabiliriz."
