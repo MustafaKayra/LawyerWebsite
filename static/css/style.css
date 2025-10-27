@@ -823,3 +823,92 @@ body {
     color: #fff;
     font-size: 25px;
 }
+
+.about-title {
+    color: #ff7b00;
+    font-size: 90px;
+}
+
+.about-paragraph {
+    color: #fff;
+    font-size: 30px;
+}
+
+.about-image {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ff7b00;
+    max-width: 320px;
+    z-index: 0;
+}
+
+#aboutimage1 {
+    box-shadow: 0 0 10px #2d67cc;
+}
+
+#aboutimage4 {
+    top: -60px;
+    left: 120px;
+    z-index: 1;
+    box-shadow: 0 0 10px #fff;
+}
+
+#aboutimage2 {
+    left: 110px;
+    box-shadow: 0 0 10px #fff;
+}
+
+#aboutimage5 {
+    top: -20px;
+    right: 50px;
+    box-shadow: 0 0 10px #2d67cc;
+}
+
+#aboutimage6 {
+    right: -120px;
+    top: -20px;
+    box-shadow: 0 0 10px #2d67cc;
+}
+
+#aboutimage9 {
+    top: -220px;
+    right: 230px;
+    box-shadow: 0 0 10px #fff;
+}
+
+#aboutimage8 {
+    top: -420px;
+    right: 190px;
+}
+
+#aboutimage7 {
+    top: -90px;
+    z-index: 2;
+}
+
+.about-h3 {
+    color: #ff7b00;
+    font-size: 60px;
+}
+
+.about-text {
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-h2 {
+    color: #ff7b00;
+    font-size: 70px;
+}
+
+#companyhistory {
+    background: linear-gradient(45deg, #080807, #131411 ,#ff7b00);
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ff7b00;
+}
+
+#missionandvision {
+    background: linear-gradient(45deg, #2A5298, #131411 ,#080807);
+    border-radius: 20px;
+    box-shadow: 0 0 10px #2A5298;
+}
