@@ -20,7 +20,7 @@
     <div class="container-fluid" id="index-welcome">
         <nav class="navbar navbar-expand-lg">
             <div class="container justify-content-center text-center mb-5">
-                <a class="navbar-brand mx-auto" href="#">Ertuğrul Avukatlık</a>
+                <a class="navbar-brand mx-auto" href="{% url 'index' %}">Ertuğrul Avukatlık</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">Anasayfa</a>
+                            <a class="nav-link" href="{% url 'index' %}">Anasayfa</a>
                         </li>
                         <li class="nav-item mx-3">
                             <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>

@@ -10,6 +10,10 @@ const ffaContentTitle = document.querySelector("#ffaContentTitle")
 const ffaContentText = document.querySelector("#ffaContentText")
 const ffaContent = document.querySelector(".ffa-content")
 
+const valuesBorder = document.querySelector(".valuesborder")
+const dots = document.querySelectorAll(".dot")
+const valuesContent = document.querySelector(".valuescontent")
+
 
 if (workspaceNextButton && workspacePreviousButton) {
     let activeWrapper = document.querySelector(".workspace-row:not(.d-none)");
@@ -138,6 +142,50 @@ if (ffaCard) {
                 ffaContent.style.animation = "ffacontentanimation 0.5s"
                 ffaContentTitle.textContent = "Hangi konularda hizmet veriyorsunuz?"
                 ffaContentText.textContent = "Aile hukuku, iş hukuku, ceza hukuku, ticaret hukuku, gayrimenkul hukuku, miras hukuku, tüketici hukuku, sigorta hukuku ve daha birçok alanda hizmet vermekteyiz. Detaylı uzmanlık alanlarımızı Çalışma Alanlarımız bölümünden inceleyebilirsiniz. Alanımız dışında kalan konularda size yönlendirme yapabiliriz."
+            }
+        })
+    })
+}
+
+if (valuesBorder && dots) {
+    dots.forEach((dot) => {
+        valuesBorder.style.animation = "none"
+        const otherDots = Array.from(dots).filter(d => d !== dot)
+        dot.addEventListener("mouseenter", () => {
+            valuesBorder.style.animation = "valuesborderanimation 0.04s forwards"
+            dot.style.animation = "dotbackgroundanimation 0.04s forwards"
+            otherDots.forEach((otherDot) => {
+                otherDot.style.opacity = "0.5"
+            })
+        })
+
+        dot.addEventListener("mouseleave", () => {
+            valuesBorder.style.animation = "valuesborderafteranimation 0.04s forwards"
+            dot.style.animation = "dotbackgroundafteranimation 0.04s forwards"
+            otherDots.forEach((otherDot) => {
+                otherDot.style.opacity = "1"
+            })
+        })
+
+        dot.addEventListener("click", () => {
+            valuesBorder.style.position = "relative"
+            valuesBorder.style.left = "-100px"
+            valuesContent.classList.remove("d-none")
+            valuesContent.style.animation = "none"
+            void valuesContent.offsetWidth // Reflow'u zorla (tarayıcının DOM'u yeniden hesaplamasını sağla)
+            console.log(valuesContent.children[0])
+            if (dot.id == "adalet") {
+                valuesContent.children[0].textContent = "Hukukun temel direği olan adalet, bizim için vazgeçilmezdir. Her davada tarafsız,objektif ve ilkeli bir yaklaşım sergiliyor, hukukun üstünlüğüne olan inancımızla müvekkillerimizin haklarını sonuna kadar savunuyoruz.Adaletin tecellisi için titizlikle çalışıyor, her müvekkilimize eşit ve adil bir hizmet sunuyoruz."
+                valuesContent.style.animation = "ffacontentanimation 0.5s"
+            } else if (dot.id == "durustluk") {
+                valuesContent.children[0].textContent = "Müvekkillerimize karşı her zaman açık sözlü ve dürüst olmak, mesleğimizin temel ilkesidir. Gerçekçi beklentiler oluşturuyor, vaatlerde bulunmak yerine doğru stratejiler geliştiriyoruz. Dürüstlük, uzun vadeli güvenin temelidir ve biz her ilişkide bu değeri ön planda tutuyoruz."
+                valuesContent.style.animation = "ffacontentanimation 0.5s"
+            } else if (dot.id == "guven") {
+                valuesContent.children[0].textContent = "Müvekkil-avukat ilişkisinin en önemli unsuru güvendir. Sizlere emanet ettiğiniz bilgileri gizlilik içinde saklıyor, sadakat ve sorumlulukla hareket ediyoruz. Haklarınızı korurken, her zaman yanınızda olduğumuzu hissettirmek için çalışıyoruz. Güven, bizim için sadece bir değer değil, bir sorumluluktur."
+                valuesContent.style.animation = "ffacontentanimation 0.5s"
+            } else if (dot.id == "seffaflik") {
+                valuesContent.children[0].textContent = "Hukuki süreçler karmaşık olabilir, ancak biz her aşamayı sizinle paylaşıyoruz. Açık ve anlaşılır bir dil kullanarak, davanızın durumunu düzenli olarak bildiriyor, her kararı birlikte alıyoruz. Şeffaf iletişim anlayışımız sayesinde, müvekkillerimiz kendilerini güvende ve bilgili hissediyor."
+                valuesContent.style.animation = "ffacontentanimation 0.5s"
             }
         })
     })
