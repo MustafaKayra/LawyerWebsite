@@ -5,3 +5,6 @@ def index(request):
 
 def about(request):
     return render(request,"about.html")
+
+def workspaces(request):
+    return render(request,"workspace.html")
