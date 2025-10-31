@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Ertuğrul Avukatlık</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container justify-content-center text-center mb-5">
+                <a class="navbar-brand mx-auto" href="{% url 'index' %}">Ertuğrul Avukatlık</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="{% url 'index' %}">Anasayfa</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="{% url 'about' %}">Hakkımızda</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="{% url 'workspaces' %}">Çalışma Alanlarımız</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="{% url 'blogs' %}">Bloglar</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid my-5">
+        <h1 class="text-center blogs-title">Makalelerimiz</h1>
+        <p class="text-center blogs-paragraph">Hukuk dünyasındaki güncel gelişmeler, yasal haklarınız ve merak ettikleriniz hakkında bilgilendirici yazılarımızı okuyabilirsiniz.</p>
+        <div class="row d-flex justify-content-center my-5">
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">Boşanma Davasında Mal Paylaşımı Nasıl Yapılır?</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            Boşanmada mal paylaşımı nasıl yapılır? Edinilmiş mallara katılma rejimi ve haklarınızı koruma yollarını öğrenin.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">İşten Çıkarılma Sonrası Tazminat Hakları</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            İşten çıkarılma durumunda kıdem ve ihbar tazminatı haklarınızı öğrenin.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">KVKK Nedir ve İşletmenizi Nasıl Etkiler?</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            KVKK uyum süreçleri her işletme için zorunludur. İşletmenizin veri güvenliğini nasıl sağlayacağını bu makaleden öğrenin.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">Kira Sözleşmelerinde Kiracı ve Ev Sahibi Hakları</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            Kira uyuşmazlıklarında kiracı ve ev sahibinin hakları nelerdir? Tahliye süreçleri ve yasal haklarınız hakkında bilgi alın.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">Miras Hukukunda Saklı Pay ve Tenkis Davası</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            Saklı pay nedir ve tenkis davası ne zaman açılır? Miras haklarınızı korumak için bilmeniz gerekenleri keşfedin.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mx-4 mb-5">
+                <a href="#" class="blogs-item d-block text-decoration-none">
+                    <h2 class="text-center blogs-item-title pt-5 mx-auto">Trafik Kazalarında Sigorta Tazminat Süreci</h2>
+                    <div class="blogs-header d-flex flex-row px-4">
+                        <div class="blogs-circle me-3"></div>
+                        <hr class="blogs-item-hr">
+                    </div>
+                    <div class="blogs-content d-flex justify-content-center align-items-center flex-column px-5 my-3">
+                        <p class="text-center blogs-item-paragraph">
+                            Trafik kazası sonrası sigorta tazminatı nasıl alınır? Hasar tespitinden dava sürecine kadar tüm aşamaları öğrenin.
+                        </p>
+                        <button class="text-center workspaces-button p-3">İletişime Geçin</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid py-5" id="footer-container">
+            <div class="row d-flex justify-content-center flex-row">
+                <div class="col-md-3 d-flex justify-content-center align-items-center flex-column text-center">
+                    <h1 class="footer-title">Ertuğrul Avukatlık</h1>
+                    <p class="footer-paragraph">Adaletin Güvencesi, Hakların Koruyucusu.</p>
+                </div>
+
+                <div class="col-md-3 text-center d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="footer-h3">Menü</h3>
+                    <a href="/" class="footer-link my-2">Anasayfa</a>
+                    <a href="#" class="footer-link my-2">Hakkımızda</a>
+                    <a href="#" class="footer-link my-2">Çalışma Alanlarımız</a>
+                    <a href="#" class="footer-link my-2">Makaleler</a>
+                    <a href="#" class="footer-link my-2">İletişim</a>
+                </div>
+
+                <div class="col-md-3 text-center d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="footer-h3">Çalışma Alanlarımız</h3>
+                    <a href="#" class="footer-link my-2">Ticaret Hukuku</a>
+                    <a href="#" class="footer-link my-2">İş Hukuku</a>
+                    <a href="#" class="footer-link my-2">Aile Hukuku</a>
+                    <a href="#" class="footer-link my-2">Gayrimenkul Hukuku</a>
+                    <a href="#" class="footer-link my-2">Ceza Hukuku</a>
+                </div>
+
+                <div class="col-md-3 text-center d-flex justify-content-center align-items-center flex-column">
+                    <h3 class="footer-h3">Makaleler</h3>
+                    <a href="#" class="footer-link my-2">Ticaret Hukuku</a>
+                    <a href="#" class="footer-link my-2">İş Hukuku</a>
+                    <a href="#" class="footer-link my-2">Aile Hukuku</a>
+                    <a href="#" class="footer-link my-2">Gayrimenkul Hukuku</a>
+                    <a href="#" class="footer-link my-2">Ceza Hukuku</a>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center flex-row mt-5">
+                    <div class="col-md-4 d-flex justify-content-center flex-row">
+                        <i class="fa-solid fa-phone footer-icon px-1"></i><p class="footer-contact"> +90 123 456 78 90 </p>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center flex-row">
+                        <i class="fa-solid fa-envelope footer-icon px-1"></i><p class="footer-contact"> m.toker2009@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center flex-row">
+                        <i class="fa-solid fa-city contact-icon px-1"></i><p class="footer-contact"> Ankara, Yenimahalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

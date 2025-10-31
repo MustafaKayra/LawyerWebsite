@@ -8,3 +8,6 @@ def about(request):
 
 def workspaces(request):
     return render(request,"workspace.html")
+
+def blogs(request):
+    return render(request,"blogs.html")
