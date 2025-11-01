@@ -26,7 +26,8 @@ urlpatterns = [
     path('about/',views.about,name="about"),
     path('workspace/',views.workspaces,name="workspaces"),
     path('blogs/',views.blogs,name="blogs"),
-    path('contact/',views.contact,name="contact")
+    path('contact/',views.contact,name="contact"),
+    path('blog/<slug:slug>',views.blog,name="blog")
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

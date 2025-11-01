@@ -1265,3 +1265,25 @@ body {
     #121310 70%,
     #2b2c25 100%);
 }
+
+.blogdetail-title {
+    font-size: 90px;
+    color: #ff7b00;
+}
+
+.blogdetail-topic {
+    font-size: 25px;
+    color: #fff;
+}
+
+.blogdetail-paragraph {
+    font-size: 30px;
+    color: #fff;
+}
+
+#blogdetail-image {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
