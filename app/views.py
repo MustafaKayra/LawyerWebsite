@@ -11,3 +11,6 @@ def workspaces(request):
 
 def blogs(request):
     return render(request,"blogs.html")
+
+def contact(request):
+    return render(request,"contact.html")

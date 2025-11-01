@@ -770,7 +770,24 @@ body {
 }
 
 #footer-container {
-    background-color: #20201b;
+    /*background: linear-gradient(to bottom,
+        gray 0%,
+        rgb(120, 120, 120) 5%,
+        rgb(114, 114, 114) 10%,
+        rgb(107, 107, 107) 20%,
+        rgb(92, 92, 92) 30%,
+        rgb(81, 81, 81) 40%,
+        rgb(74, 74, 74) 50%,
+        rgb(66, 66, 66) 60%,
+        rgb(56, 56, 56) 80%,
+        rgb(47, 47, 47) 100%
+    ); */
+
+    background-color: #2b2c25;    
+}
+
+#footerindex-container {
+    background: linear-gradient(to bottom, gray, #2b2c25);    
 }
 
 .footer-h3 {
@@ -1232,4 +1249,19 @@ body {
     opacity: 1;
     visibility: visible;
     transform: scale(1.05);
+}
+
+.contact-title {
+    color: #ff7b00;
+    font-size: 90px;
+}
+
+#contact-container {
+    background: linear-gradient(to bottom, #121310, gray);
+}
+
+.last-container {
+    background: linear-gradient(to bottom,
+    #121310 70%,
+    #2b2c25 100%);
 }
