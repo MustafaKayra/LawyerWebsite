@@ -14,6 +14,12 @@ const valuesBorder = document.querySelector(".valuesborder")
 const dots = document.querySelectorAll(".dot")
 const valuesContent = document.querySelector(".valuescontent")
 
+const nonelements = document.body.querySelectorAll(".card, #footerindex-container, #footer-container, #persons-container, #timeline-container, #whoareweabout-container")
+const elements = document.body.querySelectorAll(".navbar, .container, .container-fluid")
+const persons = document.querySelectorAll(".person-item")
+const timelineItems = document.querySelectorAll(".timeline-item, #timeline-container-title")
+const companyHistory = document.querySelectorAll(".companyhistory, #history-title, #values-row")
+
 
 if (workspaceNextButton && workspacePreviousButton) {
     let activeWrapper = document.querySelector(".workspace-row:not(.d-none)");
@@ -188,5 +194,99 @@ if (valuesBorder && dots) {
                 valuesContent.style.animation = "ffacontentanimation 0.5s"
             }
         })
+    })
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.style.transform = "translateY(20px)"
+            entry.target.style.opacity = "0"
+            entry.target.style.animation = "scrollanimation 1.5s forwards"
+            observer.unobserve(entry.target)
+        }
+    })
+}, {
+    threshold: 0.03
+})
+
+nonelements.forEach((element) => {
+    observer.unobserve(element)
+})
+
+elements.forEach((element) => {
+    const isNonElement = Array.from(nonelements).includes(element)
+
+    if (!isNonElement) {
+        observer.observe(element)
+    }
+})
+
+
+
+if (persons) {
+    const personObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            entry.target.style.opacity = "0"
+        })
+
+        if (entries[0].isIntersecting) {
+            entries[0].target.style.transform = "translateY(20px)"
+            entries[0].target.style.opacity = "0"
+            entries[0].target.style.animation = "scrollanimation 0.5s forwards"
+            entries[0].target.addEventListener("animationend", () => {
+                entries[1].target.style.transform = "translateY(20px)"
+                entries[1].target.style.opacity = "0"
+                entries[1].target.style.animation = "scrollanimation 0.5s forwards"
+                entries[1].target.addEventListener("animationend", () => {
+                    entries[2].target.style.transform = "translateY(20px)"
+                    entries[2].target.style.opacity = "0"
+                    entries[2].target.style.animation = "scrollanimation 0.5s forwards"
+                    entries[2].target.addEventListener("animationend", () => {
+                        entries[3].target.style.transform = "translateY(20px)"
+                        entries[3].target.style.opacity = "0"
+                        entries[3].target.style.animation = "scrollanimation 0.5s forwards"
+                    })
+                })
+            })
+        }
+    })
+
+    persons.forEach((person) => {
+        personObserver.observe(person)
+    })
+}
+
+if (timelineItems) {
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = "translateY(20px)"
+                entry.target.style.opacity = "0"
+                entry.target.style.animation = "scrollanimation 1s forwards"
+                timelineObserver.unobserve(entry.target)
+            }
+        })
+    })
+
+    timelineItems.forEach((timeline) => {
+        timelineObserver.observe(timeline)
+    })
+}
+
+if (companyHistory) {
+    const historyObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.transform = "translateY(20px)"
+                entry.target.style.opacity = "0"
+                entry.target.style.animation = "scrollanimation 1.5s forwards"
+                historyObserver.unobserve(entry.target)
+            }
+        })
+    })
+
+    companyHistory.forEach((history) => {
+        historyObserver.observe(history)
     })
 }

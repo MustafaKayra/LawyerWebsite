@@ -857,6 +857,7 @@ body {
     box-shadow: 0 0 10px #ff7b00;
     max-width: 320px;
     z-index: 0;
+    animation: yaxisanimation 1.5s infinite;
 }
 
 #aboutimage1 {
@@ -1286,4 +1287,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@keyframes scrollanimation {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes yaxisanimation {
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
