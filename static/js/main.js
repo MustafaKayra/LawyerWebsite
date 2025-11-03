@@ -175,7 +175,11 @@ if (valuesBorder && dots) {
 
         dot.addEventListener("click", () => {
             valuesBorder.style.position = "relative"
-            valuesBorder.style.left = "-100px"
+            if (window.innerWidth <= 768) {
+                valuesBorder.style.left = "0px"
+            } else {
+                valuesBorder.style.left = "-100px"
+            }
             valuesContent.classList.remove("d-none")
             valuesContent.style.animation = "none"
             void valuesContent.offsetWidth // Reflow'u zorla (tarayıcının DOM'u yeniden hesaplamasını sağla)
