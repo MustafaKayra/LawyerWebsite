@@ -1196,6 +1196,13 @@ body {
     font-size: 90px;
 }
 
+@media (max-width: 768px) {
+    .workspacespage-title {
+        color: #ff7b00;
+        font-size: 70px;
+    }
+}
+
 .workspacespage-paragraph {
     color: #fff;
     font-size: 25px;
@@ -1323,6 +1330,57 @@ body {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .blogs-title {
+        color: #ff7b00;
+        font-size: 60px;
+    }
+
+    .blogs-item {
+        width: 345px !important;
+        height: auto !important;
+        border: 1px solid #fff;
+        background: linear-gradient(45deg, #3c3d34, #20201b);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        text-decoration: none !important;
+    }
+
+    .blogs-item:hover {
+        border: 1px solid #ff7b00;
+        box-shadow: 0 0 10px #ff7b00;
+        background: linear-gradient(45deg, #3c3d34, #20201b);
+        border-radius: 20px;
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+
+    .blogs-circle {
+        width: 20px !important;
+        height: 20px !important;
+        border: 2px solid #ff7b00;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        opacity: 0;
+    }
+
+    .blogs-item:hover .blogs-circle {
+        width: 40px !important;
+        height: 40px !important;
+        border: 2px solid #ff7b00;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .blogs-item:hover .blogs-item-hr {
+        flex-grow: 1;
+        color: #ff7b00;
+        margin: 20px 10px 0 0 !important;
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+}
+
 .blogs-circle {
     width: 40px;
     height: 40px;
@@ -1413,6 +1471,23 @@ body {
 .blogdetail-paragraph {
     font-size: 30px;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .blogdetail-title {
+        font-size: 50px;
+        color: #ff7b00;
+    }
+
+    .blogdetail-topic {
+        font-size: 15px;
+        color: #fff;
+    }
+
+    .blogdetail-paragraph {
+        font-size: 20px;
+        color: #fff;
+    }
 }
 
 #blogdetail-image {
